@@ -16,7 +16,11 @@ int main() {
 	celsius =  5/9.0 * (fahrenheit-32);
 	printf("%d °F = %d °C\n", fahrenheit, celsius);
 
-	// correct version 3: use the proper type and format specifier
+	// correct version 3: casting the value to be a floating-point number
+	celsius =  ((float) 5/9) * (fahrenheit-32);
+	printf("%d °F = %d °C\n", fahrenheit, celsius);
+
+	// correct version 4: use the proper type and format specifier
 	double celsiusDecimal = 5/9.0 * (fahrenheit-32);
 	printf("%d °F = %010.5f °C\n", fahrenheit, celsiusDecimal);
 
